@@ -1,5 +1,6 @@
 * {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    
 }
 
 body {
@@ -33,7 +34,7 @@ a.btn-person-font {
     margin-right: auto;
     height: 98vh;
     padding: 0;
-    background: #ebebeb;
+    background-color: #182B49;
     /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);*/
 }
@@ -75,7 +76,7 @@ img.btn-icon {
 
 .btn-mentor {
     position: relative;
-    background-color: blueviolet;
+    background-color: #C69214;
     text-align: center;
     margin-top: 2px;
     margin-bottom: 4px;
@@ -116,8 +117,12 @@ img.btn-icon {
     border: 1px solid black;
 }
 
-.btn-home {
+.tab a {
+    color: #C69214;
+}
 
+.btn-home {
+    
 }
 
 .btn-msg {
@@ -129,6 +134,56 @@ button {
 }
 
 .logo {
-    
+    color: #C69214;
     border: 1px solid black;
+}
+
+.container {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #182B49;
+}
+
+.btn-changephoto-font {
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.profile-name {
+    align-items: center;
+    padding: 5px;
+    border-radius: 40px;
+    border: 2px solid #C69214;
+}
+
+.profile-workout {
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+    border: 2px solid #C69214;
+}
+
+.profile-switch {
+    align-items: center;
+    padding: 5px;
+    border-radius: 40px;
+    border: 2px solid #C69214;
+}
+
+#profile-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile-photo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
