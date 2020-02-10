@@ -1,5 +1,6 @@
 * {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    
 }
 
 body {
@@ -31,25 +32,39 @@ a.btn-person-font {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
+    height: 98vh;
     padding: 0;
-    background: #ebebeb;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);
+    background-color: #182B49;
+    /*-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 50% 100%, 0 100%);*/
 }
 
 .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
     margin-left: 0;
     margin-right: 0;
     height: 20%;
 }
 
+.main-scroll {
+    height: 61vh;
+    border: 1px solid black;
+}
+
 .btn-person {
     position: relative;
+    overflow-y: scroll;
     background-color: white;    
-    border-radius: 5px;
-    height: 10%;
-    margin-bottom: 4px;
+    border-radius: 10px;
+    width: 95%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
     font-size: 20px;
 }
 
@@ -61,7 +76,7 @@ img.btn-icon {
 
 .btn-mentor {
     position: relative;
-    background-color: blueviolet;
+    background-color: #C69214;
     text-align: center;
     margin-top: 2px;
     margin-bottom: 4px;
@@ -74,49 +89,101 @@ img.btn-icon {
     margin-top: auto;
 }
 
-.btn-home {
-    padding: 5px;
-    position: absolute;
-    border: 1px solid black;
-    bottom: 35px;
-    left: 57px;
+.btn-settings {
+    align-self: flex-start;
+    height: 20px;
+    width: 10px;
 }
 
-.btn-home-msg {
-    padding: 5px;
-    position: absolute;
+.btn-account {
+    align-self: flex-start;
+    height: 20px;
+    width: 10px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
     border: 1px solid black;
-    bottom: 35px;
-    right: 48px;
+}
+
+.btn-tab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.tab a {
+    color: #C69214;
+}
+
+.btn-home {
+    
+}
+
+.btn-msg {
+
 }
 
 button {
     background-color: blue;
 }
 
-button.btn-settings {
-    position: absolute;
-    z-index: 10;
-    right: 15px;
-    top: 15px;
-    height: 20px;
-    width: 20px;
-}
-
-button.btn-account {
-    position: absolute;
-    z-index: 10;
-    left: 15px;
-    top: 15px;
-    height: 20px;
-    width: 20px;
-}
-
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 40%;
-    padding: 10px;
-    z-index: 10;
+    color: #C69214;
     border: 1px solid black;
+}
+
+.container {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #182B49;
+}
+
+.btn-changephoto-font {
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.profile-name {
+    align-items: center;
+    padding: 5px;
+    border-radius: 40px;
+    border: 2px solid #C69214;
+}
+
+.profile-workout {
+    align-items: center;
+    padding: 10px;
+    border-radius: 40px;
+    border: 2px solid #C69214;
+}
+
+.profile-switch {
+    align-items: center;
+    padding: 5px;
+    border-radius: 40px;
+    border: 2px solid #C69214;
+}
+
+#profile-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile-photo {
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
